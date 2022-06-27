@@ -5,7 +5,7 @@ services:
     image: portainer/portainer-ce:latest
     container_name: portainer
     restart: always
-    command: --admin-password "$$apr1$$1utgh8mc$$lQMf9uAnPKDFvK1WpmdMr/"
+    command: --admin-password "$apr1$6kqgibw3$kUxRvp37zp/RJlAubzgOG1"
     security_opt:
       - no-new-privileges:true
     networks:
