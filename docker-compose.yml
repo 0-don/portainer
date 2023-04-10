@@ -16,7 +16,7 @@ services:
 #       - ./portainer-data:/data
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.portainer.rule=Host(`portainer.myngz.com`)'
+      - 'traefik.http.routers.portainer.rule=Host(`$DOMAIN`)'
       - 'traefik.http.routers.portainer.entrypoints=websecure'
       - 'traefik.http.routers.portainer.tls.certresolver=letsencrypt'
       - 'traefik.http.services.portainer.loadbalancer.server.port=9000'
